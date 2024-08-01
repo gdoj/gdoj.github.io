@@ -1,1 +1,13 @@
-
+{
+  "problems": "Danh sách bài",
+  "submissions": "Các bài nộp",
+  "users": "Thành viên",
+  "contests": "Các kì thi",
+  "about": "Thông tin",
+  "judges": "Máy chấm",
+  "custom_checkers": "Trình chấm ngoài",
+  "github": "GitHub",
+  "devlog": "DevLog",
+  "login": "Đăng nhập",
+  "sign_up": "Đăng kí"
+}
