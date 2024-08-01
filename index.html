@@ -78,14 +78,6 @@
          );
       </script>
       <script>window.user = {};</script>
-      <script>
-         function submmit_language(lang) {
-             if (lang != "en" ) {
-                 $("input[name=language]").val(lang)
-                 $("#set_language").submit()
-             }
-         }
-      </script>
       <noscript>
          <style>
             #content {
@@ -648,24 +640,6 @@
                   </a>
                </li>
             </ul>
-	    <span id="user-links">
-            <a href="https://gdoj.io.vn/tickets/new?issue_url=https%3A//gdoj.io.vn/" style="margin-right: 5px;">
-                <span title="Report issue">
-                    <i class="fa fa-exclamation-triangle" style="color: yellow;"></i>
-                </span>
-            </a>
-            <a id="flag_vi" href="#" onclick="submmit_language('vi')" style="margin-right: 5px; margin-top: 4px;">
-                <img src="/static/icons/vi_flag.5ae22348af5d.svg" alt="VI" height="24">
-            </a>
-            <a id="flag_en" href="#" onclick="submmit_language('en')" style="margin-right: 5px; margin-top: 4px;">
-                <img src="/static/icons/gb_flag.7e1408b72e7f.svg" alt="EN" height="24">
-            </a>
-                <span class="anon">
-                    <a href="/accounts/login/?next=/"><b>Log in</b></a>
-                    &nbsp;or&nbsp;
-                    <a href="/accounts/register/"><b>Sign up</b></a>
-                </span>
-        </span>
          </div>
          <div id="nav-shadow"></div>
       </nav>
