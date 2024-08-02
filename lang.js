@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const languageLinks = document.querySelectorAll('#language-selector');
+    const languageLinks = document.querySelectorAll('#language-selector .language');
     const contentElements = document.querySelectorAll('[data-key]');
     let translations = {};
 
