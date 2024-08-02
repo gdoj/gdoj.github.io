@@ -1,17 +1,47 @@
-var langCode = $("#langCode").val() || "en";
-var jsonUrl = "../Content/lang/" + langCode + ".json";
+document.addEventListener('DOMContentLoaded', () => {
+    const languageElements = document.querySelectorAll('.language');
+    const contentElements = document.querySelectorAll('[data-key]');
+    let translations = {};
 
-var translate = function (jsdata) {
-    $("[langKey]").each(function (index) {
-        var strTr = jsdata[$(this).attr("langKey")];
-        $(this).html(strTr);
-        $(this).attr("placeholder", strTr);
+    async function loadTranslations(lang) {
+        try {
+            const response = await fetch(`${lang}.json`);
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            translations = await response.json();
+            updateContent();
+        } catch (error) {
+            console.error('Error loading translations:', error);
+        }
+    }
+
+    function updateContent() {
+        contentElements.forEach(el => {
+            const key = el.getAttribute('data-key');
+            el.textContent = translations[key] || el.textContent;
+        });
+    }
+
+    function changeLanguage(lang) {
+        languageElements.forEach(el => {
+            el.classList.remove('active');
+            if (el.getAttribute('data-lang') === lang) {
+                el.classList.add('active');
+            }
+        });
+
+        loadTranslations(lang);
+    }
+
+    languageElements.forEach(el => {
+        el.addEventListener('click', () => {
+            const lang = el.getAttribute('data-lang');
+            changeLanguage(lang);
+        });
     });
-}
 
-$.ajax({
-    url: jsonUrl,
-    dataType: "json",
-    async: false,
-    success: translate
+    // Set default language
+    const defaultLang = 'en'; // or 'vi'
+    changeLanguage(defaultLang);
 });
