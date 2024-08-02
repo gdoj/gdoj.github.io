@@ -19,7 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateContent() {
         contentElements.forEach(el => {
             const key = el.getAttribute('data-key');
-            el.textContent = translations[key] || el.textContent;
+            if (translations[key]) {
+                el.textContent = translations[key];
+            } else {
+                console.warn(`No translation found for key: ${key}`);
+            }
         });
     }
 
@@ -36,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     languageLinks.forEach(el => {
         el.addEventListener('click', (event) => {
-            event.preventDefault();  // Ngăn chặn hành vi mặc định của liên kết
+            event.preventDefault();  // Prevent the default link behavior
             const lang = el.getAttribute('data-lang');
             changeLanguage(lang);
         });
@@ -45,3 +49,4 @@ document.addEventListener('DOMContentLoaded', () => {
     // Set default language
     const defaultLang = 'en'; // or 'vi'
     changeLanguage(defaultLang);
+});
