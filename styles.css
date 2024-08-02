@@ -157,7 +157,7 @@ hr {
 }
 
 #content .title {
-    color: #231f20
+    color: #8f0601
 }
 
 footer {
@@ -212,7 +212,7 @@ noscript #noscript {
 }
 
 .time {
-    color: #231f20
+    color: #8f0601
 }
 
 .toggle {
@@ -317,7 +317,7 @@ math {
     top: 0;
     right: 0;
     position: absolute;
-    color: #5c5954;
+    color: #c78380;
     padding-right: 10px;
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
@@ -379,7 +379,7 @@ math {
     left: 0;
     width: 100%;
     height: 56px;
-    background: #231f20
+    background: #8f0601
 }
 
 #nav-shadow {
@@ -391,7 +391,7 @@ math {
 }
 
 #nav-container {
-    background: #231f20;
+    background: #8f0601;
     height: 100%
 }
 
@@ -464,7 +464,7 @@ nav ul li ul {
     left: 5px;
     display: none;
     color: #fff;
-    background: #231f20;
+    background: #8f0601;
     margin: 0!important;
     -webkit-box-shadow: 2px 2px 4px rgba(0,0,0,.4);
     box-shadow: 2px 2px 4px rgba(0,0,0,.4)
@@ -555,7 +555,7 @@ nav .nav-divider {
         margin: 0;
         position: fixed;
         top: 36px;
-        background: #231f20;
+        background: #8f0601;
         bottom: 0;
         width: 8em;
         left: 0
@@ -907,7 +907,7 @@ code .il {
 .table th {
     height: 2em;
     color: #fff;
-    background-color: #231f20;
+    background-color: #8f0601;
     border-color: gray;
     border-width: 0 1px 1px 0;
     border-style: solid;
@@ -1082,7 +1082,7 @@ img.inline-math {
 }
 
 .blog-content .post .comment-count-link {
-    color: #231f20
+    color: #8f0601
 }
 
 .blog-content .post .comment-icon {
@@ -2330,7 +2330,7 @@ img.user-gravatar {
 
 #submission-activity #submission-activity-actions #year {
     font-size: 1.25em;
-    color: #231f20
+    color: #8f0601
 }
 
 #submission-activity #submission-activity-display {
@@ -2362,7 +2362,7 @@ img.user-gravatar {
     font-size: .75em;
     line-height: 1;
     font-weight: 100;
-    color: #231f20
+    color: #8f0601
 }
 
 #submission-activity #submission-activity-display #submission-total-count {
@@ -2572,7 +2572,7 @@ img.user-gravatar {
     background-color: #f8f8f8;
     border-radius: 4px;
     font-size: .95em;
-    color: #231f20
+    color: #8f0601
 }
 
 .content-description pre {
@@ -2828,7 +2828,7 @@ a.view-pdf {
 
 input[type=text],input[type=password],input[type=email],input[type=number],input[type=url] {
     padding: 4px 8px;
-    color: #231f20;
+    color: #8f0601;
     background: #fff none;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -2884,7 +2884,7 @@ input[type=checkbox]:checked {
 
 textarea {
     padding: 4px 8px;
-    color: #231f20;
+    color: #8f0601;
     background: #fff none;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -2983,7 +2983,7 @@ textarea:focus {
 }
 
 .tabs h2 {
-    color: #231f20
+    color: #8f0601
 }
 
 .tabs>ul {
@@ -3049,7 +3049,7 @@ ul.pagination>li>a,ul.pagination>li>span {
     line-height: 1.42857;
     text-decoration: none;
     color: #fff;
-    background-color: #231f20;
+    background-color: #8f0601;
     border: 1px solid gray;
     margin-left: -1px
 }
@@ -3174,7 +3174,7 @@ a.close:hover {
 
 .sidebox h3 {
     margin: 0 -5px;
-    background: #231f20;
+    background: #8f0601;
     border-radius: 4px 4px 0 0;
     color: #fff;
     padding-top: 5px;
@@ -3414,7 +3414,7 @@ a.voted {
 
 .comment-edits:not(:empty) {
     padding-right: 2px;
-    color: #231f20
+    color: #8f0601
 }
 
 .comment-operation {
@@ -3425,7 +3425,7 @@ a.voted {
 }
 
 .comment-operation .fa {
-    color: #231f20
+    color: #8f0601
 }
 
 .comment-operation a+a {
@@ -3479,7 +3479,7 @@ a.voted {
 }
 
 .previous-revision,.next-revision {
-    color: #231f20
+    color: #8f0601
 }
 
 .new-comments .comment-display {
@@ -3790,7 +3790,7 @@ label[for=language],label[for=status],label[for=organization] {
 }
 
 .submission-contest {
-    color: #231f20
+    color: #8f0601
 }
 
 .source-ln {
@@ -3877,7 +3877,7 @@ label[for=language],label[for=status],label[for=organization] {
     border: 1px solid #2980b9;
     border-left-width: .5em;
     border-radius: 4px;
-    color: #231f20
+    color: #8f0601
 }
 
 #test-cases .case-output {
@@ -4011,7 +4011,7 @@ label[for=language],label[for=status],label[for=organization] {
 }
 
 #contest-calendar td ul li a {
-    color: #231f20
+    color: #8f0601
 }
 
 #contest-calendar td ul li a:hover {
@@ -4033,7 +4033,7 @@ label[for=language],label[for=status],label[for=organization] {
 #banner {
     border-bottom: 1px solid #ccc;
     padding-bottom: 1em;
-    color: #231f20;
+    color: #8f0601;
     font-size: 15px
 }
 
@@ -4159,7 +4159,7 @@ form.contest-join-pseudotab input {
 }
 
 .contest-participation-operation .fa {
-    color: #231f20
+    color: #8f0601
 }
 
 .contest-participation-operation a+a {
@@ -4340,7 +4340,7 @@ form.contest-join-pseudotab input {
 }
 
 .grayed {
-    color: #231f20
+    color: #8f0601
 }
 
 .accordion {
@@ -4360,7 +4360,7 @@ form.contest-join-pseudotab input {
 
 .accordion .card-toggle {
     color: #fff;
-    background: #231f20;
+    background: #8f0601;
     border-radius: 4px 4px 0 0;
     display: block;
     font-size: 1.1em;
@@ -4388,7 +4388,7 @@ form.contest-join-pseudotab input {
 }
 
 .select2-container--dmoj .select2-selection--single .select2-selection__rendered {
-    color: #231f20;
+    color: #8f0601;
     line-height: 28px
 }
 
@@ -4502,7 +4502,7 @@ form.contest-join-pseudotab input {
 }
 
 .select2-container--dmoj .select2-selection--multiple .select2-selection__choice__remove:hover {
-    color: #231f20
+    color: #8f0601
 }
 
 .select2-container--dmoj[dir=rtl] .select2-selection--multiple .select2-selection__choice,.select2-container--dmoj[dir=rtl] .select2-selection--multiple .select2-selection__placeholder,.select2-container--dmoj[dir=rtl] .select2-selection--multiple .select2-search--inline {
