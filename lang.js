@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const languageElements = document.querySelectorAll('.language');
+    const languageLinks = document.querySelectorAll('#language-selector .language');
     const contentElements = document.querySelectorAll('[data-key]');
     let translations = {};
 
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function changeLanguage(lang) {
-        languageElements.forEach(el => {
+        languageLinks.forEach(el => {
             el.classList.remove('active');
             if (el.getAttribute('data-lang') === lang) {
                 el.classList.add('active');
@@ -34,8 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
         loadTranslations(lang);
     }
 
-    languageElements.forEach(el => {
-        el.addEventListener('click', () => {
+    languageLinks.forEach(el => {
+        el.addEventListener('click', (event) => {
+            event.preventDefault();  // Ngăn chặn hành vi mặc định của liên kết
             const lang = el.getAttribute('data-lang');
             changeLanguage(lang);
         });
@@ -44,4 +45,3 @@ document.addEventListener('DOMContentLoaded', () => {
     // Set default language
     const defaultLang = 'en'; // or 'vi'
     changeLanguage(defaultLang);
-});
