@@ -1,11 +1,11 @@
 window.MathJax = {
-    tex: {
-        inlineMath: [
-            ['~', '~'],
-            ['\\(', '\\)']
-        ]
-    },
-    options: {
-        enableMenu: false
-    }
+  tex: {
+    inlineMath: [
+      ["~", "~"],
+      ["\\(", "\\)"],
+    ],
+  },
+  options: {
+    enableMenu: false,
+  },
 };

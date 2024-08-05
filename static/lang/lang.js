@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function loadTranslations(lang) {
     try {
-      const response = await fetch(`./static/lang/${lang}.json`); 
+      const response = await fetch(`./static/lang/${lang}.json`);
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
